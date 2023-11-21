@@ -13,7 +13,7 @@ const Testimonials = () => {
 
    useEffect(() => {
         try{
-           axios('/public/reviews.json')
+           axios('http://localhost:5000/reviews')
            .then(res => {
             const data = res.data;
             setReviews(data)
